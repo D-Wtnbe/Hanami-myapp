@@ -1,0 +1,27 @@
+<h1>ユーザー一覧</h1>
+<div class="container">
+<div class="profile_list">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+				<theader>
+					<tr>
+		<th>名前</th>
+    <th>ユーザーID</th>
+		<th>メールアドレス</th>
+	</tr>
+</theader>
+<tbody>
+	<div id="users">
+	<% users.each do |user| %>
+		<tr>
+			<td><a href="/users/<%=user.id%>"><%= user.name %></a></td>
+      <td><%= user.userid %></td>
+			<td><%= user.email %></td>
+		</tr>
+		</div>
+		<% end %>
+	</tbody>
+</table>
+</div>
+</div>
+</div>

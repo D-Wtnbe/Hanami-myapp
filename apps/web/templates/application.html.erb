@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= javascript 'jquery-3.2.0.min' %>
+  <%= javascript 'bootstrap.min' %>
+    <title>Hanami-myapp</title>
+    <%= favicon %>
+    <a><%= link_to "ホーム", routes.root_path, class: "btn btn-info" %></a>
+      <a><%= link_to "ログイン", routes.new_session_path, class: "btn btn-info" %></a>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
